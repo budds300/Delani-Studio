@@ -19,7 +19,7 @@ body{
      
  }
  #form{
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./images/backgrounds/c_image.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(./images/backgrounds/c_image.jpg);
     background-position: center;
     background-repeat:no-repeat;
     height: 50vh;
@@ -34,18 +34,18 @@ body{
     display: none;
 }
 
-#portfolio1,#portfolio2,#portfolio3,#portfolio4,#portfolio5,#portfolio6,#portfolio7,#portfolio8{
+.portfolio-img{
 
     position: relative;
     
 }
-.project-txt{
+.project-txt {
     position: absolute;
     top: 20px;
     bottom: 0;
-    left: 30px;
+    left: 35px;
     right: 0;
-    width:77%;
+    width:75%;
     height: 80%;
     box-sizing:border-box;
     border-top: 2px solid white;
@@ -55,5 +55,8 @@ body{
     background-color: rgba(0,0,0,0.7);
     transition: .5s ease;
     color: white;
-    opacity: 100%;
+    opacity: 0;
+}
+.project-txt:hover{
+    opacity: 1;
 }
